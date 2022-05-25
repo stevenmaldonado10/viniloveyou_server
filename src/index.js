@@ -10,9 +10,9 @@ const conexion = require('./config/config')
 conexion(`${process.env.URI}`)
 
 // import route
-const register = require('./Routes/register');
-const login = require('./Routes/login');
-const Vinyls = require('./Routes/getVinyls');
+const register = require('./routes/register');
+const login = require('./routes/login');
+const Vinyls = require('./routes/getVinyls');
 const buy = require('./routes/buyVinyls')
 
 
