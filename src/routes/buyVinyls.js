@@ -18,7 +18,7 @@ router.post('/buy',  async (req, res) =>{
         {
           title: req.body.title,
           unit_price: req.body.price,
-          quantity: req.body.quantity,
+          quantity: 1,
         },
       ],
     };
