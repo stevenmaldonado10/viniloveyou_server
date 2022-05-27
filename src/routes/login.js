@@ -27,14 +27,14 @@ router.post('/login', async (req, res) =>{
     }, process.env.TKN_SECRET)
 
        res.status(200).json({
-          user: validateUser,
-          token: token
+          user: validateUser.email,
+          
     })
       }
     catch(e){
       res.status(400).json({
             email: req.body.email,
-            password: req.body.password 
+             
             })
       }
     })

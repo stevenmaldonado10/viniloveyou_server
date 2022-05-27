@@ -55,7 +55,7 @@ const jump = await bcrypt.genSalt(10);
             })
             const pru= await userReq.save();  
             res.status(200).json({
-                message: userReq
+                message: userReq.email
             })
             console.log(pru)
         }
