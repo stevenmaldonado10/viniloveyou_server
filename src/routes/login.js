@@ -27,7 +27,7 @@ router.post('/login', async (req, res) =>{
     }, process.env.TKN_SECRET)
 
        res.status(200).json({
-          user: validateUser.email,
+          user: validateUser
           
     })
       }
